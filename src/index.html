@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>飞机大战</title>
+		<link rel="stylesheet" href="css/style.css" />
+	
+	<script type="text/javascript" src="js/bullet.js" ></script>
+	<script src="js/carsh.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/enemys.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myPlane.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gameEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	 onload = function(){
+	 	var oList = document.getElementById("list");
+	 	var aLi = oList.getElementsByTagName("li");
+	 	
+	 	for(var i=0;i<aLi.length;i++){
+	 		aLi[i].onclick = function(){
+	 			//1.移除菜单List
+	 			oList.parentNode.removeChild(oList);
+	 			//2.设置
+	 			var fireInterval = this.value;
+	 			myPlane.fireInterval =fireInterval -0;
+	 			//3.开始游戏:
+	 			gameEngine.init().start();
+	 			//游戏引擎
+	 			
+	 			
+	 		}
+	 	}
+	 }
+		
+	</script>
+	</head>
+	<body>
+		<div id="mainBox" class="main">
+			<ul id="list" class="list">
+				<li value="1000">地狱模式</li>
+				<li value="500">困难模式</li>
+				<li value="250">一般模式</li>
+				<li value="80">简单模式</li>
+			</ul>
+		</div>
+	</body>
+</html>

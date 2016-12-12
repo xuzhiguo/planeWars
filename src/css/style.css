@@ -1,0 +1,117 @@
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+/**************************主页面*****************************/
+
+.main{
+	margin: 0 auto;
+	position: relative;
+	width:700px;
+	height: 100%;
+	background: url(../img/bg.jpg) repeat;
+}
+
+#list{
+	width: 200px;
+	position: absolute;
+	top: 20%;
+	left: 250px;
+}
+
+#list li{
+	width: 198px;
+	height: 75px;
+	border: solid black 1px;
+	border-radius:5px ;
+	margin-bottom: 20px;
+	line-height: 75px;
+	text-align: center;
+	font: "微软雅黑";
+	font-size: 30px;
+	color: white;
+	background:orangered;
+	cursor: pointer;
+}
+
+/**********************加载页面*******************************/
+
+.logo{
+	position: absolute;
+	top: 150px;
+	left: 136px;
+	width: 428px;
+	height: 104px;
+	background: url(../img/logo.png);
+}
+
+.loadImg{
+	width: 192px;
+	height:41px;
+	position: absolute;
+	top: 400px;
+	left: 254px;
+	background: url(../img/loading1.png);
+}
+/***********************游戏页面***************************/
+
+.score{
+	width: 100px;
+	height: 30px;
+	background: yellow;
+	font: "微软雅黑";
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	float: right;
+}
+/*我方飞机*/
+.myPhane{
+	width: 98px;
+	height: 122px;
+	background: url(../img/me.png);
+	position: absolute;
+	top: 500px;
+	left: 189px;
+}
+/*小飞机*/
+.EnemySmall{
+	width: 59px;
+	height: 36px;
+	background:url(../img/plane1.png);
+	position: absolute;
+}
+
+/*中飞机*/
+.EnemyMiddle{
+	width: 70px;
+	height: 92px;
+	background: url(../img/plane2.png);
+	position: absolute;
+}
+
+/*大飞机*/
+.EnemyLarge{
+	width: 165px;
+	height: 256px;
+	background: url(../img/plane3.png);
+	position: absolute;
+}
+
+/*子弹*/
+.bullet{
+	width:7px;
+	height: 18px;
+	background: url(../img/bullet.png);
+	position: absolute;
+}
+
+/*子弹爆炸*/
+.bullet-die {
+	width: 40px;
+	height: 43px;
+	background:url(../img/die1.png);
+	position: absolute;
+}
